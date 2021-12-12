@@ -621,7 +621,7 @@ function openCanvasDesigner() {
       href += '&password=' + connection.password;
     }
 
-    var newWin = window.open(href);
+    var newWin = window.open(href , "_self");
     if (!newWin || newWin.closed || typeof newWin.closed == 'undefined') {
         var html = '';
         html += '<p>Please click following link:</p>';
