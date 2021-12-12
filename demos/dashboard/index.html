@@ -625,7 +625,7 @@ function openCanvasDesigner() {
     if (!newWin || newWin.closed || typeof newWin.closed == 'undefined') {
         var html = '';
         html += '<p>Please click following link:</p>';
-        html += '<p><a href="' + href ;//+ '" target="_blank">';
+        html += '<p><a href="' + href + '"';// target="_blank">';
         if(connection.isInitiator) {
           html += 'Click To Open The Room';
         }
