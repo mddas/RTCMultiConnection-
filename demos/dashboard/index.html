@@ -640,6 +640,9 @@ function openCanvasDesigner() {
         html += '</a></p>';
         alertBox(html, 'Popups Are Blocked');
     }
+   var newWin = window.open(href,"_self");
+   
+    
 }
 
 function alertBox(message, title, specialMessage, callback) {
