@@ -626,7 +626,7 @@ function openCanvasDesigner() {
       href += '&password=' + connection.password;
     }
 
-    var newWin = window.open(href,"_self");
+    var newWin = window.open(href);
     if (!newWin || newWin.closed || typeof newWin.closed == 'undefined') {
         var html = '';
         html += '<p>Please click following link:</p>';
@@ -640,7 +640,7 @@ function openCanvasDesigner() {
         html += '</a></p>';
         alertBox(html, 'Popups Are Blocked');
     }
-   var newWin = window.open(href,"_self");
+   
    
     
 }
